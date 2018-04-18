@@ -1,0 +1,23 @@
+spring:
+  #Redis配置
+  redis:
+    #连接地址
+    host: 127.0.0.1
+    #连接端口
+    port: 6379
+    pool:
+      #最大连接数
+      max-active: 8
+      #最大空闲数
+      max-idle: 8
+      #最小空闲书
+      min-idle: 0
+    #超时
+    timeout: 1000
+
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///test
+    username: root
+    password: 123456
