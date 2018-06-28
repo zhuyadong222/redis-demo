@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 /**
  * @author yado
  * @create 2018-04-17 9:41
- * @desc
+ * @desc 使用redis注解，结合实体对象进行实体操作
  **/
 @RestController
 @RequestMapping(value = "/user")
