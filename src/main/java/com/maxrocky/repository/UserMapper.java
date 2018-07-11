@@ -33,7 +33,7 @@ public interface UserMapper {
     void updateUser(User user);
 
     //删除用户
-    //allEntries = true如果指定为true，默认是false方法调用后立即删除所有缓存
+    //allEntries = true如果指定为true（默认是false），方法调用后立即删除所有缓存
     @CacheEvict(value = "users", key = "#p0", allEntries = false)
     @Delete("delete from `user` where id = #{id}")
     void deleteUserById(Integer id);
